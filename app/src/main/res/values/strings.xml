@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Reddit</string>
+    <string name="btn_Continue">Continue</string>
+    <string name="btn_SignUp">Sign up</string>
+    <string name="label_Login">Log in</string>
+    <string name="tb_Username" />
+    <string name="tb_Password" />
+    <string name="label_ForgotPassword">Forgot password?</string>
+    <string name="label_Policy">By continuing, you agree to our User Agreement and Privacy Policy</string>
+    <string name="btn_Google">Continue with Google</string>
+    <string name="btn_Apple">Continue with Apple</string>
+    <string name="btn_Login">Log in</string>
+    <string name="label_Create">Create an account</string>
+    <string name="label_AgreeText">I agree to get emails about cool stuff on Reddit</string>
+    <string name="label_Email">Email</string>
+    <string name="tb_Email" />
+</resources>

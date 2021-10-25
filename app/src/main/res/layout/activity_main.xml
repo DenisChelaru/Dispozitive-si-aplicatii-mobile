@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_Linii2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="392dp"
+        android:text="_________________________"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toEndOf="@+id/label_Or"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Apple"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Continue"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="0.2"
+        android:background="@android:color/holo_orange_dark"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/btn_Continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/tb_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_weight="0.5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/tb_Username"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <ImageView
+        android:id="@+id/ic_reddit"
+        android:layout_width="81dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.3"
+        android:src="@drawable/ic_reddit"
+        app:layout_constraintBottom_toTopOf="@+id/tb_Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:background="@color/white"
+        android:text="@string/btn_SignUp"
+        android:textColor="#2954AA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toEndOf="@+id/ic_reddit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/label_LogIn"
+        android:layout_width="92dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/label_Login"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/label_Policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/tb_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/tb_Password"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_Username"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/label_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_Username"
+        app:layout_constraintEnd_toStartOf="@+id/tb_Username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tb_Username"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/label_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Password"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_Password"
+        app:layout_constraintEnd_toStartOf="@+id/tb_Password"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tb_Password" />
+
+    <TextView
+        android:id="@+id/label_ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_ForgotPassword"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_Password"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/label_Policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/label_Policy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_reddit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_Or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="OR"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tb_Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_Policy"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <TextView
+        android:id="@+id/label_Linii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="392dp"
+        android:text="_________________________"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/label_Or"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Apple"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Google"
+        android:layout_width="170dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:text="@string/btn_Google"
+        android:textColor="#2954AA"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Apple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_Policy"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Apple"
+        android:layout_width="172dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:text="@string/btn_Apple"
+        android:textColor="#2954AA"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/label_Or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Apple"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Apple"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_Apple"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Google"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Google"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_Google"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
